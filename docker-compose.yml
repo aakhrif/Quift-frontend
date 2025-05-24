@@ -9,6 +9,7 @@ services:
       - "4000:3000"
     networks:
       - frontend-net
+    restart: unless-stopped
 
 networks:
   frontend-net:
